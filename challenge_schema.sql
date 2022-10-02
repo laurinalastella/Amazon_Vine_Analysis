@@ -6,6 +6,9 @@ CREATE TABLE review_id_table (
   review_date DATE -- this should be in the formate yyyy-mm-dd
 );
 
+-- for selecting from df on colab:
+-- "review_id", "customer_id", "product_id", "product_parent", "review_date"
+
 -- This table will contain only unique values
 CREATE TABLE products_table (
   product_id TEXT PRIMARY KEY NOT NULL UNIQUE,
@@ -27,3 +30,5 @@ CREATE TABLE vine_table (
   vine TEXT,
   verified_purchase TEXT
 );
+-- for selecting from df on colab:
+-- "review_id", "star_rating", "helpful_votes", "total_votes", "vine", "verified_purchase"
